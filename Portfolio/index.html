@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elin Axelsson — Portfolio</title>
+  <meta name="description" content="Portfolio för Elin Axelsson — webbutvecklare (HTML, CSS, JavaScript)."/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero" id="top">
+      <div class="hero-left">
+        <img src="assets/profile.jpg" alt="Profilbild — Elin Axelsson" class="avatar" id="profile-img">
+      </div>
+      <div class="hero-right">
+        <h1>Elin Axelsson</h1>
+        <p class="role">Webbutvecklare &amp; student — Högskolan i Skövde</p>
+        <p class="lead">Jag bygger användarvänliga och responsiva webbplatser med HTML, CSS och JavaScript. Tidigare erfarenhet från kundservice har gett mig god kommunikationsförmåga och noggrannhet i arbetet.</p>
+        <p class="links">
+          <a href="https://www.linkedin.com/in/elin-axelsson-86332334a/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="#" id="download-cv">Ladda ner CV</a>
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="projects">
+        <h2>Projekt</h2>
+        <p class="section-intro">Tre exempelprojekt — klicka för att se demo eller källkod.</p>
+        <div class="projects-grid">
+          <article class="card">
+            <img src="assets/project1.png" alt="Projekt 1 screenshot" class="card-img">
+            <div class="card-body">
+              <h3>Webbapplikation</h3>
+              <p>Webbapplikation för att hitta vänner på resande fot.</p>
+              <p class="card-actions">
+                <a href="file:///C:/Users/elyyz/OneDrive/Dokument/WebbisdaElinOlivia/index.html" target="_blank" rel="noopener">Demo</a>
+                <a href="#" target="_blank" rel="noopener">Kod (GitHub)</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/project2.png" alt="Projekt 2 screenshot" class="card-img">
+            <div class="card-body">
+              <h3>Prototyp (Student-projekt)</h3>
+              <p>Prototyp för hemsidan Brädspelskompaniet — en lugn, tydlig design med fokus på enkel navigation och en färgpalett inspirerad av trä och klassiska brädspel.</p>
+              <p class="card-actions">
+                <a href="file:///C:/Users/elyyz/OneDrive/Dokument/Portfolio/assets/Projekt/Projekt.html" target="_blank" rel="noopener">Demo</a>
+                <a href="#" target="_blank" rel="noopener">Kod (GitHub)</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/project3.png" alt="Projekt 3 screenshot" class="card-img">
+            <div class="card-body">
+              <h3>Prototyp (Student-projekt)</h3>
+              <p>Prototyp för hemsidan Clothes n' stuff - en lekfull, uppiggande design som koncentrerar sig på användare som vill köpa och sälja begagnade barnkläder.</p>
+              <p class="card-actions">
+                <a href="file:///C:/Users/elyyz/OneDrive/Dokument/Webbutveckling%20-%20Programmering/Mobilapplikationsdesign%20G1F/Projekt/Projekt.html" target="_blank" rel="noopener">Demo</a>
+                <a href="#" target="_blank" rel="noopener">Kod (GitHub)</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2>Om mig</h2>
+        <p>Jag studerar webbutveckling och fokuserar på frontend. Jag gillar att göra sidor som är enkla att använda och ser bra ut på alla skärmar. I tidigare jobb i butik lärde jag mig kundbemötande, snabb problemlösning och ansvarstagande — egenskaper jag tar med till teknikprojekt.</p>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Kompetenser</h2>
+        <ul class="skills-list">
+          <li>HTML &amp; semantisk markup</li>
+          <li>CSS (Flexbox, Grid, responsiv design)</li>
+          <li>Java/JavaScript</li>
+          <li>Git &amp; GitHub</li>
+          <li>Grundläggande UX och tillgänglighet</li>
+        </ul>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Kontakt</h2>
+        <p>Skicka ett meddelande så återkommer jag gärna.</p>
+
+        <!-- Byt data-endpoint till din Formspree-endpoint (eller lämna tomt för mailto-fallback) -->
+        <form id="contact-form" data-endpoint="https://formspree.io/f/manpzqpn">
+          <div class="form-row">
+            <label for="name">Namn</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-post</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Meddelande</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Skicka</button>
+            <div id="form-status" aria-live="polite"></div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Elin Axelsson — <a href="mailto:elin_ax@outlook.com">elin_ax@outlook.com</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
